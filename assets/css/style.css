@@ -1,0 +1,18 @@
+:root {
+    --red-color: red;
+    --green-color: green;
+    --blue-color: blue;
+    --primary-color: #d5d5d5;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
