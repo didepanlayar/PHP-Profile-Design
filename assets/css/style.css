@@ -58,10 +58,35 @@ nav#nav {
     list-style: none;
 }
 
-.left-nav li a {
+.right-nav li a {
     text-decoration: none;
+    margin-right: 2rem;
 }
 
 .gap-h {
     margin: 0 auto;
+}
+
+.btn {
+    display: inline;
+    color: var(--color-white);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 0;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3rem;
+    outline: none;
+    padding: 1ch 3.2rem;
+    letter-spacing: 1px;
+}
+
+.btn-sweet {
+    background: var(--color-main);
+}
+
+.btn-outline {
+    border-color: var(--color-main);
+    color: var(--color-main);
 }
