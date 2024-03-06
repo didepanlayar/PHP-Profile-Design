@@ -78,7 +78,7 @@ nav#nav {
     border: 1px solid transparent;
     border-radius: 3rem;
     outline: none;
-    padding: 1ch 3.2rem;
+    padding: 1rem 3.2rem;
     letter-spacing: 1px;
 }
 
@@ -89,4 +89,55 @@ nav#nav {
 .btn-outline {
     border-color: var(--color-main);
     color: var(--color-main);
+}
+
+.btn-submit {
+    padding: 2rem 3.2rem;
+}
+
+#form {
+    margin: 7rem 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form-section {
+    width: 50rem;
+}
+
+.form--header {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.form--header h2 {
+    font-size: 3.5rem;
+}
+
+.form--header p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.group {
+    margin-bottom: 1.5rem;
+}
+
+.form--label {
+    display: block;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #434C5E;
+    margin-bottom: .8rem;
+}
+
+.form--control {
+    width: 100%;
+    display: block;
+    padding: 1.5rem;
+    border-radius: 3px;
+    border: 1px solid #D4D9E2;
+    font-size: 1.4rem;
+    color: #596377;
+    outline: none;
 }
