@@ -124,12 +124,14 @@ nav#nav {
 }
 
 .form--label {
+    position: relative;
     display: block;
     font-weight: 700;
     font-size: 1.1rem;
     color: #434C5E;
     margin-bottom: .8rem;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .form--control {
@@ -141,6 +143,20 @@ nav#nav {
     font-size: 1.4rem;
     color: #596377;
     outline: none;
+}
+
+.forgot-password {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.forgot-password a {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #434C5E;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 /*
