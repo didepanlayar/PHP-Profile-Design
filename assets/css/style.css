@@ -116,7 +116,7 @@ nav#nav {
 
 .form--header p {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .group {
@@ -129,6 +129,7 @@ nav#nav {
     font-size: 1.1rem;
     color: #434C5E;
     margin-bottom: .8rem;
+    letter-spacing: 1px;
 }
 
 .form--control {
@@ -140,4 +141,27 @@ nav#nav {
     font-size: 1.4rem;
     color: #596377;
     outline: none;
+}
+
+/*
+====================
+    Media Query     
+====================
+*/
+
+@media (max-width: 768px) {
+
+    nav#nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .form--header h2 {
+        font-size: 2.5rem;
+    }
+
 }
