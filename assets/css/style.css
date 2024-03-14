@@ -161,6 +161,97 @@ nav#nav {
 
 /*
 ====================
+     Dashboard      
+====================
+*/
+
+.container {
+    margin: 0 4rem;
+}
+
+.dashboard {
+    display: flex;
+    margin: 7rem 0;
+    width: 100%;
+}
+
+.card {
+    width: 22%;
+    background-color: var(--color-white);
+    box-shadow: 0 1rem 4rem .5rem rgba(0, 0, 0, 0.5);
+    padding: 4rem;
+    text-align: center;
+    border-radius: .4rem;
+}
+
+.card--image {
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+}
+
+.card--image img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border-top: 4px solid var(--color-main);
+    border-right: 4px solid var(--color-main);
+    border-bottom: 4px solid var(--color-main);
+    border-left: 4px solid transparent;
+}
+
+.card--name {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2E2E2E;
+}
+
+.card--job {
+    font-size: 1.4rem;
+    color: #777777;
+}
+
+.card--skills {
+    margin: 1rem 0;
+}
+
+.skill {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid silver;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: .8rem;
+    margin-left: .6rem;
+}
+
+.skill:last-child {
+    background: var(--color-main);
+    border: none;
+    color: var(--color-white);
+    box-shadow: 0 1rem 4rem .5rem rgba(0, 0, 0, .05);
+}
+
+.card--intro {
+    margin: 1rem 0 1.5rem 0;
+    font-size: 1.2rem;
+    color: silver;
+}
+
+.card--setting {
+    margin: 2rem 0 0 0;
+}
+
+.content {
+    width: 78%;
+    background-color: #434C5E;
+}
+
+/*
+====================
     Media Query     
 ====================
 */
