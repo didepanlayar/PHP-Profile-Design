@@ -20,6 +20,7 @@
     --color-white: #FFFFFF;
     --color-black: #101112;
     --color-main: #FF3366;
+    --color-dark: #2E2E2E;
 }
 
 html {
@@ -93,6 +94,20 @@ nav#nav {
 
 .btn-submit {
     padding: 2rem 3.2rem;
+}
+
+.btn-white {
+    display: inline-block;
+    padding: 1rem 1.3rem;
+    background: var(--color-white);
+    border-radius: 0;
+    color: var(--color-dark);
+    text-decoration: none;
+    box-shadow: 0 1rem 4rem .5rem rgba(0, 0, 0, .05);
+}
+
+.btn-section {
+    margin-left: 1rem;
 }
 
 #form {
@@ -178,7 +193,7 @@ nav#nav {
 .card {
     width: 22%;
     background-color: var(--color-white);
-    box-shadow: 0 1rem 4rem .5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 4rem .5rem rgba(0, 0, 0, 0.05);
     padding: 4rem;
     text-align: center;
     border-radius: .4rem;
@@ -247,7 +262,35 @@ nav#nav {
 
 .content {
     width: 78%;
-    background-color: #434C5E;
+}
+
+.content-section {
+    font-size: 1.3rem;
+    background: var(--color-white);
+    margin-left: 3rem;
+    padding: 3rem;
+    border-radius: .4rem;
+    box-shadow: 0 1rem 4rem .5rem rgba(0, 0, 0, 0.05);
+}
+
+.content-heading {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid var(--color-main);
+    font-size: 1.8rem;
+}
+
+.icon {
+    display: inline-block;
+    margin-left: .5rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--color-white);
+    background: var(--color-main);
 }
 
 /*
