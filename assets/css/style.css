@@ -330,6 +330,7 @@ nav#nav {
     border-radius: 4px;
     outline: none;
     cursor: pointer;
+    font-weight: normal;
 }
 
 #label::after {

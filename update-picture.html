@@ -57,7 +57,7 @@
                         <form action="">
                             <div class="group">
                                 <label for="picture" class="form--label" id="label"></label>
-                                <input type="file" name="picture" id="picture" class="profile-picture">
+                                <input type="file" name="picture" id="picture" class="profile-picture" onchange="picture_name();">
                             </div>
                             <div class="group">
                                 <input type="submit" name="" value="Update Picture" class="btn btn-sweet btn-submit">
@@ -69,5 +69,16 @@
         </div>
     </div>
     <!-- Container -->
+
+    <script>
+        function picture_name() {
+            let picture = document.getElementById('picture').value;
+            let pictureName = picture.split('\\');
+            let index = pictureName.length - 1;
+            let label = document.getElementById('label');
+
+            label.innerText = pictureName[index];
+        }
+    </script>
 </body>
 </html>
