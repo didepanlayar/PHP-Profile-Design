@@ -433,4 +433,21 @@ nav#nav {
         font-size: 2.5rem;
     }
 
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .content-section {
+        margin-left: 0;
+    }
+
 }
