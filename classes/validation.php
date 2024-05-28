@@ -13,13 +13,13 @@ class validation {
         }
     }
 
-    public function validate($field_name, $rules) {
+    public function validate($field_name, $label, $rules) {
         $all_rules  = explode('|', $rules);
         $value      = $this->input($field_name);
 
         if(in_array("required", $all_rules)) {
             if(empty($value)) {
-                $this->errors[$field_name] = $field_name . " is required.";
+                $this->errors[$field_name] = $label . " is required.";
             }
         }
     }
