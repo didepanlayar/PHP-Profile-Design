@@ -28,6 +28,15 @@ class queries extends database {
     public function rowCount() {
         return $this->result->rowCount();
     }
+
+    /**
+     * Fetch Single Row
+     *
+     * @return void
+     */
+    public function fetch() {
+        return $this->result->fetch(PDO::FETCH_OBJ);
+    }
 }
 
 ?>
