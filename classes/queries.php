@@ -25,8 +25,8 @@ class queries extends database {
      *
      * @return void
      */
-    public function rowCount() {
-        return $this->result->rowCount();
+    public function row_count() {
+        return $this->result->row_count();
     }
 
     /**
