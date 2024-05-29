@@ -16,10 +16,20 @@ class validation {
     public function validate($field_name, $label, $rules) {
         $all_rules  = explode('|', $rules);
         $value      = $this->input($field_name);
+        $pattern    = "/^[a-zA-Z ]+$/";
 
+        /**
+         * Required Rule
+         */
         if(in_array("required", $all_rules)) {
             if(empty($value)) {
                 $this->errors[$field_name] = $label . " is required.";
+            }
+        }
+        
+        if(in_array("alphabetic", $all_rules)) {
+            if(!preg_match($pattern, $value)) {
+                $this->errors[$field_name] = $label . " must be alphabetical.";
             }
         }
     }
