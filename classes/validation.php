@@ -27,9 +27,25 @@ class validation {
             }
         }
         
+        /**
+         * Alphabetical Rule
+         */
         if(in_array("alphabetic", $all_rules)) {
             if(!preg_match($pattern, $value)) {
                 $this->errors[$field_name] = $label . " must be alphabetical.";
+            }
+        }
+
+        /**
+         * Minimum Length Rule
+         */
+        if(in_array("min_len", $all_rules)) {
+            $min_len_index           = array_search("min_len", $all_rules);
+            $min_len_value_index     = $min_len_index + 1;
+            $min_len_value           = $all_rules[$min_len_value_index];
+
+            if(strlen($value) < $min_len_value) {
+                return $this->errors[$field_name] = $label . " must be " . $min_len_value . "character.";
             }
         }
     }
